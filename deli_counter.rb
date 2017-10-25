@@ -18,21 +18,16 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli,name)
-   if katz_deli == []
-     katz_deli.push(name)
-  # katz_deli.each_with_index do |name, index|
-  puts "Welcome, #{name}. You are number #{1} in line."
-
-   end
-
+    katz_deli.push(name)
+    puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
 def now_serving(katz_deli)
-  katz_deli.each_with_index do |name|
-      puts "Currently serving #{name}."
-    if katz_deli == []
-      puts "There is nobody waiting to be served!"
-    end
-   end
- end
+
+
+    # katz_deli.push(name)
+    #   puts "Currently serving #{name}."
+    # else
+  puts "There is nobody waiting to be served!"
+    # end
 end
